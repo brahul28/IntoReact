@@ -3,10 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
     <title>IntoReact</title>
   </head>
   <body>
-    <div id="root"></div>
+    <h1>This is top of the root</h1>
+    <div id="root">
+      <h1>Hi this is rahul</h1> <!-- This will be replaced by the root.render(parent)-->
+    </div>
+    <h1>This is bottom of the root</h1> <!--The react library will only work inside <div id = "root"> apart from that everything will work like an Html the order of fles matters and aht we are rendering in react-->
     <!-- <script>
         const heading = document.createElement("h1");
         heading.innerHTML = "Hello World from JavaScript";
@@ -24,12 +29,6 @@
       src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
     ></script>
 
-    <script>
-      const heading = React.createElement("h1", {}, "Hello World Using React!")
-
-      const root = ReactDOM.createRoot(document.getElementById("root"));
-
-      root.render(heading);
-    </script>
+    <script src="App.js"></script>
   </body>
 </html>
