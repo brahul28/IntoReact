@@ -1,0 +1,18 @@
+{
+  "name": "intoreact",
+  "version": "1.0.0",
+  "description": "This the entry point to the react world",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "(https://github.com/brahul28/IntoReact.git)"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "Rahul Bisht",
+  "license": "ISC"
+}
