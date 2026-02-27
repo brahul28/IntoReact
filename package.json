@@ -14,5 +14,8 @@
     "react"
   ],
   "author": "Rahul Bisht",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.16.4"
+  }
 }
