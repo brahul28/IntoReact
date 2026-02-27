@@ -2,7 +2,7 @@
   "name": "intoreact",
   "version": "1.0.0",
   "description": "This the entry point to the react world",
-  "main": "App.js",
+  "default": "index.html",
   "scripts": {
     "test": "jest"
   },
@@ -17,5 +17,9 @@
   "license": "ISC",
   "devDependencies": {
     "parcel": "^2.16.4"
+  },
+  "dependencies": {
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
   }
 }
