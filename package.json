@@ -2,8 +2,9 @@
   "name": "intoreact",
   "version": "1.0.0",
   "description": "This the entry point to the react world",
-  "default": "index.html",
   "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
     "test": "jest"
   },
   "repository": {
