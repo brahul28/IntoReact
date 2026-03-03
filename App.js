@@ -1,42 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
+//JSX is not part of React or not HTML indside REACT they are separate entity, JSX lookalike XML
+//JSX -> HTML like or XML like syntax
+//JSX transpiled before it reaches the JS as JS engine doesnot understand JSX.
 
-/**
- * <div id= "parent">
- *      <div id="child">
- *          <h1>I'm h1 tag</h1>
- *          <h1>I'm h1 tag</h1>
- *      </div>
- *  <div id="child2">
- *          <h1>I'm h1 tag</h1>
- *          <h1>I'm h1 tag</h1>
- *      </div>
- * </div>
- * 
- */
-//How we can manually create the react elements.
-
-
-const parent = React.createElement("div", { id: "parent" }, [
-  React.createElement("div", { id: "child" }, [
-    React.createElement("div", { id: "one" }, "I am h1 Tag"),
-    React.createElement("div", { id: "two" }, "I am h2 Tag"),
-  ]),
-  React.createElement("div", { id: "child2" }, [
-    React.createElement("div", { id: "one" }, "I am h1 Tag"),
-    React.createElement("div", { id: "two" }, "I am h2 Tag"),
-  ]),
-]);
-
-const heading = React.createElement(
-  "h1",
-  { id: "heading" },
-  "Hello World Using React!",
+const jsxHeading = (
+  <h1 id="heading" className="root">
+    Hi I am JSX heading
+  </h1>
 );
 
-console.log(heading); //Object
-console.log(parent);
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(parent);
+root.render(jsxHeading);
