@@ -1,41 +1,78 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-//JSX is not part of React or not HTML indside REACT they are separate entity, JSX lookalike XML
-//JSX -> HTML like or XML like syntax
-//JSX transpiled before it reaches the JS as JS engine doesnot understand JSX.
+const Header = () => {
+  return (
+    <div className="header">
+      <div className="logo-container">
+        <img
+          className="logo"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1JfBPRPEWx8O_bchRFTW_ObVmTck3g_SJ1w&s"
+        />
+      </div>
+      <div className="nav-items">
+        <ul>
+          <li>Home</li>
+          <li>About us</li>
+          <li>Contact us</li>
+          <li>Cart</li>
+        </ul>
+      </div>
+    </div>
+  );
+};
 
-const jsxHeading = (
-  <h1 id="heading" className="root">
-    Hi I am JSX heading
-  </h1>
-);
+const RestaurantCard = () => {
+  return (
+    <div className="res-card" style={{ backgroundColor: "#f0f0f0" }}>
+      <img
+        className="res-logo"
+        alt="res-logo"
+        src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_600/c810605435207767f386b61c559f7cbd"
+      />
+      <h3>Himalayan Food</h3>
+      <h4>Veg Fried Rice</h4>
+      <h4>4.4 stars</h4>
+      <h4>38 minutes</h4>
+    </div>
+  );
+};
 
-//React functional component
+const Body = () => {
+  return (
+    <div className="body">
+      <div className="Search">Search</div>
+      <div className="res-container">
+        <RestaurantCard />
+        <RestaurantCard />
+        <RestaurantCard />
+        <RestaurantCard />
+        <RestaurantCard />
+        <RestaurantCard />
+        <RestaurantCard />
+        <RestaurantCard />
+        <RestaurantCard />
+        <RestaurantCard />
+        <RestaurantCard />
+        <RestaurantCard />
+        <RestaurantCard />
+        <RestaurantCard />
+        <RestaurantCard />
+        <RestaurantCard />
+      </div>
+    </div>
+  );
+};
 
-const title = (
-  <h1 id="title" className="title">
-    Title of the Project
-  </h1>
-);
-
-const Title = () => (
-  <h3 id="heading" tabIndex={6} className="title">
-    Another Title heading
-  </h3>
-);
-
-const HeadingComponent = () => (
-  <div id="container">
-    {title}
-    {Title()}
-    <h2 id="heading" className="head">
-      This is functional component
-    </h2>
-    <Title/>
-  </div>
-);
+const Applayout = () => {
+  return (
+    <div className="app">
+      <Header />
+      <Body />
+    </div>
+  );
+};
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(<HeadingComponent />);
+root.render(<Applayout />);
